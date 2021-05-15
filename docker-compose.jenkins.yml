@@ -1,0 +1,9 @@
+version: "3.1"
+
+# docker run --name jenkins-server -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
+services:
+  learn-jenkins-server:
+    image: jenkins/jenkins:lts
+    ports:
+      - "8888:8080"
+      - "50000:50000"
